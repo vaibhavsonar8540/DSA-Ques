@@ -233,7 +233,6 @@
 //   document.writeln("<br>");
 // }
 
-
 // q-15 :
 
 // 1
@@ -246,10 +245,61 @@
 
 // 1 0 1 0 1
 
-// for (let i = 1; i <= 5; i++) {   
-//     for (let j = 1; j <= i; j++) {  
+// for (let i = 1; i <= 5; i++) {
+//     for (let j = 1; j <= i; j++) {
 //         document.writeln(( j % 2 + " "));
 //     }
 //     document.writeln("<br>");
 // }
+
+// find the group of numbers , whose sum is equal to target value .
+
+// const target = 12;
+// const nums = [1, 2, 3, 4, 5, 6];
+// let final = [];
+
+// for (let i = 0; i < nums.length; i++) {
+//   for (let j = i + 1; j < nums.length; j++) {
+//     let t1 = nums[i] + nums[j];
+//     let diff = target - t1;
+//     let isExit = nums.includes(diff);
+
+//     if (isExit == true) {
+//       final.push([nums[i], nums[j], diff]);
+//     }
+//   }
+// }
+
+// final.map((el) => {
+//   el.sort();
+// });
+
+// console.log(final);
+
+// const type = final.map(a=>JSON.stringify(a))
+
+// const uniqueArr = [...new Set(type)].map(a => JSON.parse(a));  // new set is an object who doesnt allow duplicate ele  , json parse arr ko string se array me convert kar rha
+// console.log(uniqueArr)
+
+
+
+// group of 4 elements
+const target = 15;
+const nums = [1, 2, 3, 4, 5, 6];
+let final = [];
+
+for (let i = 0; i < nums.length; i++) {
+  for (let j = i + 1; j < nums.length; j++) {
+    for (let k = j + 1; k < nums.length; k++) {
+      for (let l = k + 1; l < nums.length; l++) {
+        let sum = nums[i] + nums[j] + nums[k] + nums[l];
+        if (sum === target) {
+          final.push([nums[i], nums[j], nums[k], nums[l]]);
+        }
+      }
+    }
+  }
+}
+
+console.log(final)
 
