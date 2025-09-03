@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Menx</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Menx</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/about.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Product Gallery
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../products/watches.html">Watches</a>
+                        <a class="dropdown-item" href="../products/perfumes.html">Perfumes</a>
+                        <a class="dropdown-item" href="../products/clothes.html">Clothes</a>
+                        <a class="dropdown-item" href="../products/shoes.html">Shoes</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/testimonials.html">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/signup.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/signin.html">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>About Us</h1>
+        <p>Welcome to Menx, your one-stop shop for the latest in men's fashion and accessories. Our mission is to provide high-quality products that cater to the modern man's lifestyle.</p>
+        <p>At Menx, we believe in offering a curated selection of watches, perfumes, clothes, and shoes that not only enhance your style but also reflect your personality. Our team is dedicated to sourcing the best products from around the world to ensure that you have access to the latest trends and timeless classics.</p>
+        <p>Thank you for choosing Menx. We look forward to serving you!</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
