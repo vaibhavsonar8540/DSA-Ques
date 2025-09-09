@@ -22,7 +22,8 @@ if(target == middlePoint){
         break;
 
     }
-    console.log("target is matched at index"+ sort[i])
+    console.log("target is matched , target is smaller than middlepoint")
+    
 }else{
    
 }
