@@ -1,31 +1,55 @@
-let arr = [1, 5, 3, 6, 9, 8, 11, 15, 20];
+// let arr = [1, 5, 3, 6, 9, 8, 11, 15, 20];
 
+// let sort = arr.sort((a, b) => a - b);
+
+// let l =0 ;
+// let h = sort.length-1 ;
+
+// const target = 11 ;
+
+// console.log(sort); 
+// // [
+// //   1,  3,  5,  6, 8, 9, 11, 15, 20
+// // ]
+
+// let middlePoint = Math.floor((l+h)/2)
+// console.log(middlePoint)
+// console.log(sort[middlePoint])
+
+// if(target == sort[middlePoint]){
+//     console.log(`target is matched at index ${middlePoint}`);
+// }else if(target<sort[middlePoint]){
+//     h = middlePoint - 1;
+// }else if(target>sort[middlePoint]){
+//    l = middlePoint + 1;
+// }
+
+
+
+let arr = [1, 5, 8, 6, 7, 15, 21, 11, 20];
+
+// Sort array ascending
 let sort = arr.sort((a, b) => a - b);
 
-const target = 11 ;
+const target = 11;
+let l = 0;
+let h = sort.length - 1;
+let found = false;
 
-console.log(sort); 
-// [
-//   1,  3,  5,  6, 8, 9, 11, 15, 20
-// ]
+for (;l <= h;) {
+  let middlePoint = Math.floor((l + h) / 2);
 
-let middlePoint = sort[4]
-
-console.log(middlePoint)
-
-if(target == middlePoint){
-    console.log("target is matched ");
-}else if(target<middlePoint){
-    for(let i=0 ; i<sort[4];i++)
-    {
-        target==sort[i]
-        break;
-
-    }
-    console.log("target is matched , target is smaller than middlepoint")
-    
-}else{
-   
+  if (target === sort[middlePoint]) {
+    console.log(`Target ${target} is matched at index ${middlePoint}`);
+    found = true;
+    break;
+  } else if (target < sort[middlePoint]) {
+    h = middlePoint - 1; // search left half
+  } else {
+    l = middlePoint + 1; // search right half
+  }
 }
 
-
+if (!found) {
+  console.log("Target not found");
+}
