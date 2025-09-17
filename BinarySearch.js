@@ -44,9 +44,9 @@ for (;l <= h;) {
     found = true;
     break;
   } else if (target < sort[middlePoint]) {
-    h = middlePoint - 1; // search left half
+    h = middlePoint - 1; 
   } else {
-    l = middlePoint + 1; // search right half
+    l = middlePoint + 1; 
   }
 }
 
